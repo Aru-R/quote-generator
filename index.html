@@ -3,13 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Quote Generator</title>
     <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">    
+    
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <div class="quote-container" id="quote-container">
+        <!-- qoute  -->
+        <div class="quote-text">
+            <i class="fas fa-quote-left">
+                <span id="quote"></span>
+            </i>
+        </div>
+        <!-- author element -->
+        <div class="quote-author" class="quote-text">
+            <span id="author"></span>
+        </div>
+        <!-- buttons -->
+
+        <div class="button-container">
+            <button class="twitter-button" id="twitter" title=""tweet this!>
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Qoute</button>
+        </div>
+
+    </div>
+    <!-- loader -->
+    <div class="loader" id="loader"></div>
+    
     <!--- Scriptttt-->
     <script src="script.js"></script>
     
